@@ -27,6 +27,8 @@ jobs:
         run: |
           pip install pandas numpy 
           pip install nbconvert nbformat pytest
+          pip install nbconvert nbformat pytest jupyter IPython
+
 
       - name: Convert Notebook to Python
         run: jupyter nbconvert --to script assignment.ipynb
